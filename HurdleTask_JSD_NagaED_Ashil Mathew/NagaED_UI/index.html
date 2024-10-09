@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheets">
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-form-box">
+            <div class="icon-side">
+                <img src="envelope-removebg-preview.png" alt="Envelope Icon">
+            </div>
+            <div class="form-side">
+                <h1>Contact us</h1>
+                <form id="contactForm">
+                    <div class="input-group">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" name="message" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                    <p id="successMessage" style="display: none;">Message send successfully!</p>
+                    <p id="errorMessage" style="display: none;">Please fill in all fields correctly.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
